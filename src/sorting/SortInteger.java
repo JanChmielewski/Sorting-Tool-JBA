@@ -5,9 +5,11 @@ import java.util.Collections;
 
 public class SortInteger extends SorterAndReader {
     private ArrayList<Integer> numbers;
+    private String sortingType;
 
-    public SortInteger() {
+    public SortInteger(String sortingType) {
         numbers = new ArrayList<>();
+        this.sortingType = sortingType;
     }
 
     @Override
@@ -27,7 +29,7 @@ public class SortInteger extends SorterAndReader {
     public String print() {
         StringBuilder output = new StringBuilder("Total numbers: " + numbers.size() + "." + "\nSorted data: ");
         for(int i : numbers) {
-            output.append(i);
+            output.append(i).append(" ");
         }
         return output.toString();
     }

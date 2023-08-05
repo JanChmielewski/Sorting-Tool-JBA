@@ -5,16 +5,18 @@ import java.util.Arrays;
 
 
 public class WordSorter extends SorterAndReader {
+    private final String sortingType;
     private ArrayList<String> words;
     private int longestWordLength;
     private int occurrences;
     private String longestWord;
 
-    public WordSorter() {
+    public WordSorter(String sortingType) {
         words = new ArrayList<>();
         longestWordLength = 0;
         occurrences = 0;
         longestWord = "";
+        this.sortingType = sortingType;
     }
 
     @Override

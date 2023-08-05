@@ -17,11 +17,11 @@ public class ArgumentSelector {
         }
         switch (dataType) {
             case "long":
-                return new LongSorter();
+                return new LongSorter(sortingType);
             case "line":
-                return new LineSorter();
+                return new LineSorter(sortingType);
             case "word":
-                return new WordSorter();
+                return new WordSorter(sortingType);
         }
         return null;
     }

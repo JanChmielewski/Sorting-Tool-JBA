@@ -12,6 +12,6 @@ public abstract  class SorterAndReader {
     }
 
     public abstract void read();
-    public abstract void sort(String sortingType);
+    public abstract void sort();
     public abstract String print();
 }
